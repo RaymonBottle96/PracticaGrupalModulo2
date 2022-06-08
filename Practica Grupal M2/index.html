@@ -7,26 +7,116 @@
         <script src="js/script.js" type="text/javascript"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poiret+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
-<!--            TITULO-->
             <h1>Flores a domicilio</h1>
         </header>
         <section>
+            <div id="pedido">
             <div>
-<!--                IMAGEN FLORES, PARRAFO Y H2-->
+             <img src="imagenes/rosas_rojas.jpg" alt="rosas rojas" id="rosas">
+                <h2>Tu pedido</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+            </div>
+                <form acton="#" method="post">
+                  <fieldset class="ramo">
+                      <legend>Ramo</legend>
+            <div class="left1">
+                <input type="radio" name="ramo" value="0" onclick="displayimg(this)" checked> Rosas rojas
+            </div>
+            <div class="lef1">
+                <input type="radio" name="ramo" value="1" onclick="displayimg(this)" checked> Rosas rosas
+            </div>
+            <div class="left1">
+                <input type="radio" name="ramo" value="2" onclick="displayimg(this)" checked> Rosas amarillas
+            </div>
+            <div class="left1">
+                <input type="radio" name="ramo" value="3" onclick="displayimg(this)" checked> Rosas blancas
+            </div>
+            <div class="left1">
+                <input type="radio" name="ramo" value="4" onclick="displayimg(this)" checked> Rosas multicolor
             </div>
             <div>
-                <form>
-<!--                    FORMULARIO CON 3 FIELDSET-->
+                <label>Elige el color de la tarjeta y los complementos que deseas abrir:</label>
+                <input type="color" name="color" id="color" />
+                <input type="checkbox" name="mensaje" id="mensaje" value="a" checked /> Tarjeta
+            </div>
+                </fieldset>
+                <fieldset class="ramo">
+                    <legend>Tus datos</legend>
+            <div class="left2">
+                    <label for="nombre">Nombre<span>*</span>
+                    <input type="text" name="nombre">
+                    </label>
+            </div>
+            <div class="left2">
+                    <label for="apellido">Apellidos<span>*</span>
+                    <input type="text" name="apellido">
+                    </label>
+            </div>
+            <div id="left2">
+                    <label for="telefono">Teléfono<span>*</span>
+                    <input type="tel" name="telefono" pattern="[0-9]{9}">
+                    </label>
+            </div>
+            <div id="left2">
+                    <label for="email">E-mail<span>*</span>
+                    <input type="email" name="email">
+                    </label>
+            </div>
+                </fieldset>
+                <fieldset class="ramo">
+                    <legend>Entregar</legend>
+                    <div class="left3">
+                    <label for="nombre">Nombre<span>*</span>
+                    <input type="text" name="nombre">
+                    </label>
+            </div>
+            <div id="left3">
+                    <label for="apellido">Apellidos<span>*</span>
+                    <input type="text" name="apellido">
+                    </label>
+            </div>
+            <div id="left3">
+                    <label for="direccion">Dirección de envío<span>*</span>
+                    <input type="text" name="direccion">
+                    </label>
+            </div>
+            <div id="left3">
+                    <label for="poblacion">Población<span>*</span>
+                    <input type="text" name="poblacion">
+                    </label>
+            </div>
+            <div id="left3">
+                    <label for="provincia">Provincia<span>*</span>
+                    <input type="text" name="provincia">
+                    </label>
+            </div>
+            <div id="left3">
+                    <label for="postal">Código postal<span>*</span>
+                    <input type="number" name="postal" pattern="[0-9]{5}">
+                    </label>
+            </div>
+            <div id="left3">
+                    <label for="fecha">Fecha de entrega<span>*</span>
+                    <input type="date" name="fecha">
+                    </label>
+            </div>
+            <div id="left3">
+                    <label for="hora">Horario de entrega<span>*</span>
+                    <input type="time" name="hora">
+                    </label>
+            </div>
+                </fieldset>
                 </form>
-            </div>
         </section>
         <footer>
             <div>
-                <!-- COPYRIGT -->
+                <p>&copy; 2022 Ramón Botella, software developer</p>
             </div>
         </footer>
     </body>
