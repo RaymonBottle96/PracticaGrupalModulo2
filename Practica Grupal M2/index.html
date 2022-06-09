@@ -18,6 +18,7 @@
             <div>
                 <img src="img/rosas_rojas.jpg" alt="rosas rojas" id="rosas" width="150px" height="150px">
                 <h2>Tu pedido</h2>
+                <figcaption>Ramo de rosas</figcaption>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
             </div>
@@ -44,6 +45,8 @@
                             <label>Elige el color de la tarjeta y los complementos que deseas abrir:</label>
                             <input type="color" name="color" id="color" />
                             <input type="checkbox" name="mensaje" id="mensaje" value="a" checked /> Tarjeta
+                            <input type="checkbox" name="mensaje" id="mensaje" value="a" /> Jarrón
+                            <input type="checkbox" name="mensaje" id="mensaje" value="a" /> Cesta
                         </div>
                     </fieldset>
 
@@ -110,10 +113,22 @@
                         </div>
                         <div id="left3">
                             <label for="hora">Horario de entrega<span>*</span>
-                                <input type="time" name="hora">
+                                <select id="horario">
+                                    <option>Mañana</option>
+                                    <option>Tarde</option>
+                                    <option>Noche</option>
+                                </select>
                             </label>
                         </div>
                     </fieldset>
+                    <fieldset>
+                        <legend>Pago</legend>
+                        <label for="formaPago">Elige la forma de pago: </label>
+                        <input type="radio" name="formaPago">Paypal
+                        <input type="radio" name="formaPago" checked>Tarjeta
+                    </fieldset>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Borrar">
             </form>
         </section>
         <footer>
