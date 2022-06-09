@@ -22,7 +22,7 @@ function Funcion1(box) {
     console.log(box);
                 
     var imagenes = new Array();
-    var foto = document.getElementById("foto");
+    var foto = document.getElementById("rosas");
     imagenes[0] = "img/rosas_rosas.jpg";
     imagenes[1] = "img/rosas_rojas.jpg";
     imagenes[2] = "img/rosas_multi.jpg";

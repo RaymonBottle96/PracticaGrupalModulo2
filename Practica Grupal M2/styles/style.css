@@ -1,4 +1,41 @@
 h1 {
     font-family: 'Pacifico', cursive;
     font-size: 100px;
+    background-color: blue;
+    width: 1080px;
+    margin: auto;
+}
+
+body {
+    background-color: mediumvioletred;
+}
+
+section {
+    width: 1080px;
+    margin: auto;
+    display: flex;
+}
+
+#pedido {
+    width: 600px;
+    background-color: white;
+}
+
+form {
+    width: 600px;
+    background-color: aquamarine;
+}
+
+fieldset {
+    margin: 5px 10px 5px;
+}
+
+footer {
+    width: 1080px;
+    margin: auto;
+    background-color: chartreuse;
+}
+
+.left1 {
+    display: 
 }
