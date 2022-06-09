@@ -23,7 +23,7 @@
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
             </div>
             </div>
-                <form action="#" method="post">
+                <form action="" method="get">
                     <fieldset class="ramo">
                         <legend>Ramo</legend>
                         <div class="left1">
@@ -58,13 +58,13 @@
                     <fieldset class="ramo">
                         <legend>Tus datos</legend>
                         <div class="left2">
-                            <label for="nombre">Nombre<span>*</span>
-                                <input type="text" name="nombre">
+                            <label for="nombre1">Nombre<span>*</span>
+                                <input type="text" name="nombre1">
                             </label>
                         </div>
                         <div class="left2">
-                            <label for="apellido">Apellidos<span>*</span>
-                                <input type="text" name="apellido">
+                            <label for="apellido1">Apellidos<span>*</span>
+                                <input type="text" name="apellido1">
                             </label>
                         </div>
                         <div id="left2">
@@ -81,14 +81,14 @@
                     <fieldset class="ramo">
                         <legend>Entregar</legend>
                         <div class="left3">
-                            <label for="nombre">Nombre<span>*</span>
-                                <input type="text" name="nombre">
+                            <label for="nombre2">Nombre<span>*</span>
+                                <input type="text" name="nombre2">
                             </label>
                         </div>
 
                         <div id="left3">
-                            <label for="apellido">Apellidos<span>*</span>
-                                <input type="text" name="apellido">
+                            <label for="apellido2">Apellidos<span>*</span>
+                                <input type="text" name="apellido2">
                             </label>
                         </div>
                         <div id="left3">
@@ -117,7 +117,7 @@
                             </label>
                         </div>
                         <div id="left3">
-                            <label for="hora">Horario de entrega<span>*</span>
+                            <label for="hora">Horario de entrega
                                 <select id="horario">
                                     <option>Mañana</option>
                                     <option>Tarde</option>
@@ -132,8 +132,15 @@
                         <input type="radio" name="formaPago">Paypal
                         <input type="radio" name="formaPago" checked>Tarjeta
                     </fieldset>
-                    <input type="submit" value="Enviar">
+                    <input type="button" onclick="ValidarFormulario(nombre1.value, apellido1.value, nombre2.value, apellido2.value, telefono.value, email.value, direccion.value, poblacion.value, provincia.value, postal.value, fecha.value)" value="Enviar">
                     <input type="reset" value="Borrar">
+            </form>
+            <form>
+                <div>
+                    <label for="blabla">Bla</label>
+                    <input type="text" name="blabla">
+                </div>
+                <input type="button" onclick="Funcion2(blabla.value)" value="BLABLA">
             </form>
         </section>
         <footer>
