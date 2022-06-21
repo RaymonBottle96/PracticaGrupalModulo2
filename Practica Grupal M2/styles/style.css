@@ -1,9 +1,19 @@
+body {
+    background-image: url("../img/803938-flower-wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 h1 {
     font-family: 'Pacifico', cursive;
-    font-size: 100px;
+    font-size: 70px;
+    color: white;
     background-color: blue;
     width: 1080px;
+    text-align: center;
     margin: auto;
+    background: rgba(34, 34, 34, 0.75);
 }
 
 body {
@@ -11,8 +21,9 @@ body {
 }
 
 section {
+
     width: 1080px;
-    margin: auto;
+    margin: 32px auto;
     display: flex;
 }
 
@@ -24,18 +35,101 @@ section {
 form {
     width: 600px;
     background-color: aquamarine;
+    color: white;
 }
 
 fieldset {
-    margin: 5px 10px 5px;
+    margin: 21px 10px 5px 8px;
+
+
 }
 
-footer {
+footer p {
     width: 1080px;
     margin: auto;
-    background-color: chartreuse;
+    color: white;
+    text-align: left;
+    background: rgba(34, 34, 34, 0.75);
+    padding: 22px;
 }
 
 .left1 {
-    display: 
+    display: inline-block;
+    padding: 6px;
+}
+
+.left2,
+label {
+    padding: 12px;
+
+}
+
+input[type=text],
+select {
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    font-size: 9px;
+    margin: auto;
+    width: 80%;
+
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 82px;
+}
+
+p {
+    text-align: justify;
+    margin: 12px 12px 70px 12px;
+}
+
+div img {
+    margin: 60px;
+}
+
+form {
+    background: rgba(34, 34, 34, 0.75);
+}
+
+.ramo {
+    padding: 32px;
+    border: 2px solid white;
+}
+
+.contacto {
+    display: flex;
+}
+
+.contacto input {
+    display: flex;
+    width: 160px;
+}
+
+.contacto2 {
+    width: 50%;
+    display: flex;
+    float: right;
+}
+
+.contacto3 {
+    width: 50%;
+    display: flex;
+}
+
+.contacto4 {
+    width: 50%;
+    float: right;
+}
+
+legend {
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+}
+
+figcaption {
+    margin-top: -72px;
+    margin-bottom: 90px;
+    text-align: center;
 }

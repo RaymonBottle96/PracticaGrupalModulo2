@@ -16,11 +16,12 @@
         <section>
             <div id="pedido">
             <div>
-                <img src="img/rosas_rojas.jpg" alt="rosas rojas" id="rosas" width="150px" height="150px">
+                <img src="img/rosas_rojas.jpg" alt="rosas rojas" id="rosas" width="390px" height="450px">
                 <h2>Tu pedido</h2>
                 <figcaption>Ramo de rosas</figcaption>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    <br><br>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
             </div>
             </div>
                 <form action="" method="get">
@@ -29,7 +30,7 @@
                         <div class="left1">
                             <input type="radio" name="ramo" value="0" onclick="Funcion1(this)" checked> Rosas rojas
                         </div>
-                        <div class="lef1">
+                        <div class="left1">
                             <input type="radio" name="ramo" value="1" onclick="Funcion1(this)" checked> Rosas rosas
                         </div>
                         <div class="left1">
@@ -67,15 +68,16 @@
                                 <input type="text" name="apellido1">
                             </label>
                         </div>
-                        <div id="left2">
+                        <div class="contacto">
                             <label for="telefono">Teléfono<span>*</span>
                                 <input type="tel" name="telefono" pattern="[0-9]{9}">
                             </label>
-                        </div>
-                        <div id="left2">
                             <label for="email">E-mail<span>*</span>
                                 <input placeholder="ej: nombre@tuemail.com" type="email" name="email">
                             </label>
+                        </div>
+                        <div class="contacto">
+                            
                         </div>
                     </fieldset>
                     <fieldset class="ramo">
@@ -91,24 +93,24 @@
                                 <input type="text" name="apellido2">
                             </label>
                         </div>
-                        <div id="left3">
-                            <label for="direccion">Dirección de envío<span>*</span>
-                                <input type="text" name="direccion">
+                        <div class="contacto2">
+                            <label for="direccion">Código postal<span>*</span>
+                                <input type="number" name="direccion" pattern="[0-9]{5}">
                             </label>
                         </div>
-                        <div id="left3">
-                            <label for="poblacion">Población<span>*</span>
+                        <div class="contacto3">
+                            <label for="poblacion">Dirección de envío<span>*</span>
                                 <input type="text" name="poblacion">
                             </label>
                         </div>
-                        <div id="left3">
-                            <label for="provincia">Provincia<span>*</span>
+                        <div class="contacto3">
+                            <label for="provincia">Población<span>*</span>
                                 <input type="text" name="provincia">
                             </label>
                         </div>
-                        <div id="left3">
-                            <label for="postal">Código postal<span>*</span>
-                                <input type="number" name="postal" pattern="[0-9]{5}">
+                        <div class="contacto4">
+                            <label for="postal">Provincia<span>*</span>
+                                <input type="text" name="postal" >
                             </label>
                         </div>
                         <div id="left3">
@@ -134,13 +136,6 @@
                     </fieldset>
                     <input type="button" onclick="ValidarFormulario(nombre1.value, apellido1.value, nombre2.value, apellido2.value, telefono.value, email.value, direccion.value, poblacion.value, provincia.value, postal.value, fecha.value)" value="Enviar">
                     <input type="reset" value="Borrar">
-            </form>
-            <form>
-                <div>
-                    <label for="blabla">Bla</label>
-                    <input type="text" name="blabla">
-                </div>
-                <input type="button" onclick="Funcion2(blabla.value)" value="BLABLA">
             </form>
         </section>
         <footer>
